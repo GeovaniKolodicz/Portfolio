@@ -68,6 +68,13 @@
         .div-card{
             gap: 0.5rem;
         }
+        .section-img{
+            background-repeat: no-repeat;  
+            background-size: cover;
+            width: 350px;
+            height: 266px;
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body class="d-flex flex-row justify-content-center bg-slate-50">
@@ -154,15 +161,15 @@
             </section>
             <section class="mt-5 d-flex flex-column">
                 <span class="mx-padrao font-weight-bold">Projetos Futuros</span> 
-                <section class="mx-padrao d-flex flex-row justify-content-between">
-                    <section class="d-flex my-4  ">
-                        PROJETO A
+                <section class="mx-padrao d-flex flex-row justify-content-between ">                   
+                    <section class="d-flex m-2  section-img" style="background-image: url(vue-todo.png); ">
+                        <h3 class="p-2 font-weight-bold text-white">TODO list com VUE</h3>                       
                     </section>
-                    <section class="d-flex my-4 ">
-                        PROJETO B
+                    <section class="d-flex m-2 section-img" style="background-image: url(react-logo.png); ">
+                        <h3 class="p-2 font-weight-bold text-white">Formulário em REACT</h3>                       
                     </section>
-                    <section class="d-flex my-4 ">
-                        PROJETO C
+                    <section class="d-flex m-2  section-img" style="background-image: url(linux.png); ">
+                        <h4 class="p-2 font-weight-bold text-black">Raspberry pi rodando LINUX</h3>
                     </section>
                 </section>
             </section>
