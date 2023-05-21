@@ -45,19 +45,49 @@
             gap: 1rem;
         }
         .section-blog{
-            background-color: #d4eddc;
+            background-color: #d2d2d2;
+        }
+        .section-habilidade{
+            background-color: #d2d2d2;
         }
         .dashboard-user{
             gap:0.8rem;
+        }
+        .habilidades{
+            place-content: center;
+            width: 10rem;
+            height: 10rem;
+        }
+        .img-habilidade{
+            width: 8rem;
+            filter: grayscale(1);
+        }
+        .cards-habilidades{
+            gap: 1rem;
+        }
+        .div-card{
+            gap: 0.5rem;
+        }
+        .exp-profissional-icon{
+            height: auto;
+            width: 45px;
+        }
+        .section-img{
+            background-repeat: no-repeat;  
+            background-size: cover;
+            width: 350px;
+            height: 266px;
+            border-radius: 20px;
         }
     </style>
 </head>
 <body class="d-flex flex-row justify-content-center bg-slate-50">
     <main class="d-flex flex-column ">
         <nav class="d-flex justify-content-end mr-5 font-weight-bold mt-4">
-            <a>Projetos</a>
+            <a>Habilidades</a>
             <a>Blog</a>
-            <a>Contato</a>
+            <a>Projetos</a>
+            <a>Experiência</a>
         </nav>
         <section class="d-flex flex-column">
                 <section class="d-flex justify-between mt-5 mx-padrao">
@@ -67,13 +97,45 @@
                         <button class="btn-resumo btn "> <span class="text-white text-xl">Baixar Resumo</span></button>
                     </section>
                     <section>
-                        <img src="img/foto.png" class="rounded-circle img-perfil" alt="">
+                        <img src="img/pedro.jpg" class="rounded-circle img-perfil" alt="">
                     </section>
                 </section>
-            <section class="mt-5">
+            <section class="section-habilidade mt-5">
                 <section class="mx-padrao">
-                    <section class="d-flex my-4 justify-content-between">
-                        <span>Habilidades </span> 
+                    <section class="d-flex my-4 justify-content-between flex-column">
+                        <span class="mb-3 font-weight-bold">Habilidades</span> 
+                        <section class="d-flex cards-habilidades">
+                            <div class="d-flex flex-column align-items-center div-card">
+                                <div class="d-flex bg-light rounded-circle habilidades"> 
+                                    <img src="img/vue-js.svg" class="img-habilidade">
+                                </div>
+                                <span class="font-weight-bold"> Vue.JS</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center div-card">
+                                <div class="d-flex bg-light rounded-circle habilidades"> 
+                                    <img src="img/react.svg" class="img-habilidade">
+                                </div>
+                                <span class="font-weight-bold"> React.JS</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center div-card">
+                                <div class="d-flex bg-light rounded-circle habilidades"> 
+                                    <img src="img/javascript.svg" class="img-habilidade">
+                                </div>
+                                <span class="font-weight-bold"> JavaScript</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center div-card">
+                                <div class="d-flex bg-light rounded-circle habilidades"> 
+                                    <img src="img/c.svg" class="img-habilidade">
+                                </div>
+                                <span class="font-weight-bold"> C# Net.Core</span>
+                            </div>
+                            <div class="d-flex flex-column align-items-center div-card">
+                                <div class="d-flex bg-light rounded-circle habilidades"> 
+                                    <img src="img/api.svg" class="img-habilidade">
+                                </div>
+                                <span class="font-weight-bold"> API Rest</span>
+                            </div>
+                        </section>
                     </section>
                     <section>
                         <!-- Criar cards de habilidades -->
@@ -83,7 +145,7 @@
             <section class="mt-5">
                 <section class="mx-padrao">
                     <section class="d-flex my-4 justify-content-between">
-                        <span>Postagens Recentes</span> 
+                        <span class="font-weight-bold">Postagens Recentes</span> 
                         <a href="#">Visualizar Tudo</a>
                     </section>
                     <section>
@@ -102,37 +164,48 @@
                     </section>
                 </section>
             </section>
-            <section class="mt-5">
-                <section class="mx-padrao">
-                    <section class="d-flex my-4 justify-content-between">
-                        <span>Area Nova </span> 
+            <section class="mt-5 d-flex flex-column">
+                <span class="mx-padrao font-weight-bold">Projetos em Destaque!</span> 
+                <section class="mx-padrao d-flex flex-row justify-content-between ">                   
+                    <section class="d-flex m-2  section-img" style="background-image: url(img/vue-todo.png); ">
+                        <h3 class="p-2 font-weight-bold text-white">TODO list com VUE</h3>                       
                     </section>
-                    <section>
-                        <!-- Criar cards area nova -->
+                    <section class="d-flex m-2 section-img" style="background-image: url(img/react-logo.png); ">
+                        <h3 class="p-2 font-weight-bold text-white">Formulário em REACT</h3>                       
                     </section>
-                </section>
-            </section>
-            <section class="section-blog mt-5">
-                <section class="mx-padrao">
-                    <section class="d-flex my-4 justify-between">
-                        <span>Projetos Futuros</span> 
-                    </section>
-                    <section class="d-flex my-4 justify-between ">
-                        <!-- Criar demosntrativo de projetos efetuados -->
-                    </section>
-                    <hr>
-                    <section class="d-flex my-4 justify-between">
-                        <!-- Criar demosntrativo de projetos efetuados -->
+                    <section class="d-flex m-2  section-img" style="background-image: url(img/linux.png); ">
+                        <h3 class="p-2 font-weight-bold text-black">Raspberry pi rodando LINUX</h3>
                     </section>
                 </section>
             </section>
             <section class="mt-5">
-                <section class="mx-padrao">
-                    <section class="d-flex my-4 justify-content-between">
-                        <span>Area Nova </span> 
+                <h2 class="mx-padrao pb-2 border-bottom">Experiência profissional</h2>
+                <section class="mx-padrao d-flex flex-row">
+                    <section class="mx-2 d-flex flex-row my-4 justify-content-between ">
+                        <div class="mx-2">
+                            <img class="exp-profissional-icon" src="img/google-icon.png" alt="">
+                        </div>
+                        <div class="mx-2">
+                            <h4 class="pt-2 ">Gerente de projeto</h4>
+                            <p>Auxiliava na area de gerenciamento de projeto</p>
+                        </div>
                     </section>
-                    <section>
-                        <!-- Criar cards area nova -->
+                    <section class="mx-2 d-flex flex-row my-4 justify-content-between">
+                        <div class="mx-2">
+                            <img class="exp-profissional-icon" src="img/face-icon.png" alt="">
+                        </div>
+                        <div class="mx-2">
+                            <h4 class="pt-2 ">Desenvolvedor</h4>
+                            <p>Atuava na area de desenvolvimento</p>
+                        </div>
+                    </section>
+                    <section class="mx-2 d-flex flex-row my-4 justify-content-between">
+                        <div class="mx-2 pt-2">
+                            <img class="exp-profissional-icon" src="img/ifood-icon.png" alt="">
+                        </div>
+                        <div class="mx-2">
+                            <h4 class="pt-2 ">Desenvolvedor</h4>
+                            <p>Atuava na area de desenvolvimento</p>
                     </section>
                 </section>
             </section>
